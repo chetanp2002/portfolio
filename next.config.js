@@ -16,3 +16,8 @@ module.exports = {
     return config;
   },
 }
+/** @type {import('next').NextConfig} */
+module.exports = {
+  output: 'export', // needed for static export
+  
+};

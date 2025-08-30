@@ -154,7 +154,7 @@ export default function ExperienceSection() {
                   >
                     <h4 className="text-lg font-semibold text-white">{cert.title}</h4>
                     <p className="text-gray-300">{cert.issuer}</p>
-                    <p className="text-cyber-blue text-sm">{cert.year}</p>
+                    {/* <p className="text-cyber-blue text-sm">{cert.year}</p> */}
                   </motion.div>
                 ))}
               </div>
