@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 3, 7, 18;
+  --background-end-rgb: 15, 23, 42;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb))
+  );
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@layer components {
+  .glassmorphism {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg;
+  }
+  
+  .neon-border {
+    @apply border border-cyber-blue shadow-[0_0_10px_rgba(14,165,233,0.5)];
+  }
+  
+  .cyber-button {
+    @apply px-6 py-3 bg-gradient-to-r from-secondary to-light-purple text-white rounded-md 
+           hover:from-light-purple hover:to-secondary transition-all duration-300 
+           shadow-[0_0_15px_rgba(99,102,241,0.5)] font-semibold;
+  }
+  
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold mb-8 inline-block bg-gradient-to-r from-cyber-blue to-neon-green 
+           bg-clip-text text-transparent;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4f46e5;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6366f1;
+}
+
+/* Animation classes */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Custom cursor */
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4f46e5;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: all 0.1s ease;
+  backdrop-filter: invert(100%);
+}
+
+/* Loading animation */
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #6366f1;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@import './safari-fixes.css';

@@ -1,0 +1,37 @@
+{
+  "name": "chetan-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-spring/three": "^9.7.5",
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "autoprefixer": "^10.4.21",
+    "emailjs-com": "^3.2.0",
+    "framer-motion": "^10.18.0",
+    "gsap": "^3.13.0",
+    "next": "^14.2.29",
+    "postcss": "^8.5.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^4.12.0",
+    "react-type-animation": "^3.2.0",
+    "tailwindcss": "^3.4.17",
+    "three": "^0.159.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.50",
+    "@types/react": "^18.3.22",
+    "@types/react-dom": "^18.3.7",
+    "@types/three": "^0.159.0",
+    "eslint": "^8.55.0",
+    "eslint-config-next": "^14.0.3"
+  }
+}

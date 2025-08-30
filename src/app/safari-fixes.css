@@ -1,0 +1,27 @@
+/* Safari-specific fixes */
+@media not all and (min-resolution:.001dpcm) { 
+  @supports (-webkit-appearance:none) {
+    /* Enable hardware acceleration for better 3D performance in Safari */
+    canvas {
+      transform: translateZ(0);
+    }
+    
+    /* Fix for Safari's canvas sizing issues */
+    .canvas-container {
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+    
+    /* Fix for Safari's flickering issues with 3D content */
+    .safari-fix {
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      perspective: 1000px;
+      -webkit-perspective: 1000px;
+    }
+  }
+}
