@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#1e1b4b"/>
+  <rect x="300" y="100" width="200" height="200" rx="20" fill="#4f46e5" opacity="0.7"/>
+  <rect x="320" y="120" width="160" height="160" rx="10" fill="#0f172a" opacity="0.9"/>
+  <circle cx="400" cy="170" r="30" fill="#10b981" opacity="0.8"/>
+  <path d="M 370,200 L 430,200 L 400,250 Z" fill="#0ea5e9" opacity="0.8"/>
+  <text x="400" y="300" font-family="Arial" font-size="24" fill="white" text-anchor="middle">Xencapture</text>
+  <text x="400" y="330" font-family="Arial" font-size="14" fill="#e2e8f0" text-anchor="middle">3D model capture with React Native</text>
+</svg>
