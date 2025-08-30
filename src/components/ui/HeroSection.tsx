@@ -176,7 +176,7 @@ export default function HeroSection() {
                 whileHover={isSafariBrowser ? undefined : { scale: 1.05 }}
                 whileTap={isSafariBrowser ? undefined : { scale: 0.95 }}
               >
-                Resume
+                Get Resume
               </motion.a>
           </motion.div>
         </motion.div>
