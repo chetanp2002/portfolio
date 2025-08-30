@@ -2,11 +2,14 @@
   "name": "chetan-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/chetanp2002/portfolio.git",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "deploy": "next build && next export && gh-pages -d out"
   },
   "dependencies": {
     "@react-spring/three": "^9.7.5",
@@ -32,6 +35,7 @@
     "@types/react-dom": "^18.3.7",
     "@types/three": "^0.159.0",
     "eslint": "^8.55.0",
-    "eslint-config-next": "^14.0.3"
+    "eslint-config-next": "^14.0.3",
+    "gh-pages": "^6.3.0"
   }
 }
