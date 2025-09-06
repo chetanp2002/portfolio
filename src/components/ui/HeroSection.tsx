@@ -150,14 +150,24 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.1 }}
           >
-            <motion.a 
+            {/* <motion.a 
               href="#projects"
               className="cyber-button"
               whileHover={isSafariBrowser ? undefined : { scale: 1.05 }}
               whileTap={isSafariBrowser ? undefined : { scale: 0.95 }}
             >
               View Projects
-            </motion.a>
+            </motion.a> */}
+
+             <motion.a 
+                href="/resume.pdf"
+                download
+                className="cyber-button"
+                whileHover={isSafariBrowser ? undefined : { scale: 1.05 }}
+                whileTap={isSafariBrowser ? undefined : { scale: 0.95 }}
+              >
+                Get Resume
+              </motion.a>
             
             <motion.a 
               href="#contact"
@@ -168,16 +178,6 @@ export default function HeroSection() {
             >
               Get in Touch
             </motion.a>
-
-              <motion.a 
-                href="/resume.pdf"
-                download
-                className="cyber-button"
-                whileHover={isSafariBrowser ? undefined : { scale: 1.05 }}
-                whileTap={isSafariBrowser ? undefined : { scale: 0.95 }}
-              >
-                Get Resume
-              </motion.a>
           </motion.div>
         </motion.div>
       </div>
