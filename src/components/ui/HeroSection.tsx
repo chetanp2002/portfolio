@@ -188,6 +188,7 @@ export default function HeroSection() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.5, duration: 1 }}
+
       >
         <span className="text-sm text-gray-400 mb-2">Scroll Down</span>
         <motion.div

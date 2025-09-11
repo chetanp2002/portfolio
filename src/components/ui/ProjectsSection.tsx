@@ -21,14 +21,20 @@ export default function ProjectsSection() {
       featured: true
     },
     {
-      title: 'AI-CodeMate-using-DeepSeek',
-      // description: '', //pending
-      technologies: ['Ollama', 'DeepSeek', 'Streamlit'],
-      category: 'GenAI',
-      // thumbnail: '/images/projects/video-editor.jpg',
-      link: 'https://ai-codemate-using-deepseek-kxzgu55tughqghjbbg65ff.streamlit.app/',
-      github: 'https://github.com/chetanp2002/AI-CodeMate-using-DeepSeek',
-      featured: true
+      title: 'Food-Delivery-Prediction',
+      description: '"Optimizing Food Delivery with Machine Learning" This project uses machine learning to predict food delivery times by analyzing factors like distance, weather, and traffic. It helps improve delivery efficiency and customer satisfaction, making the food delivery process smarter and faster.',
+      technologies: ['EDA', 'xgboost', 'geopy'],
+      category: 'ML',
+      link: 'https://food-delivery-prediction.onrender.com',
+      github: 'https://github.com/chetanp2002/Food-Delivery-Prediction'
+    },
+    {
+      title: 'Airline-Passenger-Referral-Prediction',
+      description: 'This project predicts whether airline passengers would recommend an airline to their friends using machine learning techniques. By analyzing customer reviews (2016–2019), it leverages data preprocessing, visualization, and multiple algorithms to derive insights and build a robust predictive model.',
+      technologies: ['Python', 'scikit-learn', 'gradio'],
+      category: 'ML',
+      link: 'https://airline-passenger-referral-prediction.onrender.com',
+      github: 'https://github.com/chetanp2002/Airline-Passenger-Referral-Prediction'
     },
     {
       title: 'JobMate',
@@ -60,7 +66,37 @@ export default function ProjectsSection() {
       github: 'https://github.com/chetanp2002/Movie-Recommender-System',
       featured: true
     },
+   {
+      title: 'Student_Performance',
+      description: 'A complete end-to-end ML solution to predict student math scores, combining MLflow for experiment tracking, DVC for version control, and Docker for seamless deployment. Scalable, reproducible, and production-ready.',
+      technologies: ['Python', 'MLFlow', 'DVC'],
+      category: 'ML',
+      link: 'https://edupred-student-performance-predictor.onrender.com',
+      github: 'https://github.com/chetanp2002/Student_Performance'
+    },
     {
+      title: 'Suna',
+      description: 'Suna - Open Source Generalist AI Agent',
+      technologies: ['AI agent', 'Python', 'API'],
+      category: 'Open Source',
+      link: 'https://www.suna.so',
+      github: 'https://github.com/chetanp2002/suna'
+    }
+  ];
+  
+  const additionalProjects = [
+    
+    {
+      title: 'AI-CodeMate-using-DeepSeek',
+      // description: '', //pending
+      technologies: ['Ollama', 'DeepSeek', 'Streamlit'],
+      category: 'GenAI',
+      // thumbnail: '/images/projects/video-editor.jpg',
+      link: 'https://ai-codemate-using-deepseek-kxzgu55tughqghjbbg65ff.streamlit.app/',
+      github: 'https://github.com/chetanp2002/AI-CodeMate-using-DeepSeek',
+      featured: true
+    },
+     {
       title: 'Forest-Fire-Prediction',
       // description: '.',  //pending
       technologies: ['pandas', 'scikit-learn', 'flask'],
@@ -70,33 +106,7 @@ export default function ProjectsSection() {
       github: 'https://https://github.com/chetanp2002/Agent-with-tools',
       featured: true
     },
-  ];
-  
-  const additionalProjects = [
-    {
-      title: 'Airline-Passenger-Referral-Prediction',
-      description: 'This project predicts whether airline passengers would recommend an airline to their friends using machine learning techniques. By analyzing customer reviews (2016–2019), it leverages data preprocessing, visualization, and multiple algorithms to derive insights and build a robust predictive model.',
-      technologies: ['Python', 'scikit-learn', 'gradio'],
-      category: 'ML',
-      link: 'https://airline-passenger-referral-prediction.onrender.com',
-      github: 'https://github.com/chetanp2002/Airline-Passenger-Referral-Prediction'
-    },
-    {
-      title: 'Food-Delivery-Prediction',
-      description: '"Optimizing Food Delivery with Machine Learning" This project uses machine learning to predict food delivery times by analyzing factors like distance, weather, and traffic. It helps improve delivery efficiency and customer satisfaction, making the food delivery process smarter and faster.',
-      technologies: ['EDA', 'xgboost', 'geopy'],
-      category: 'ML',
-      link: 'https://food-delivery-prediction.onrender.com',
-      github: 'https://github.com/chetanp2002/Food-Delivery-Prediction'
-    },
-    {
-      title: 'Student_Performance',
-      description: 'A complete end-to-end ML solution to predict student math scores, combining MLflow for experiment tracking, DVC for version control, and Docker for seamless deployment. Scalable, reproducible, and production-ready.',
-      technologies: ['Python', 'MLFlow', 'DVC'],
-      category: 'ML',
-      link: 'https://edupred-student-performance-predictor.onrender.com',
-      github: 'https://github.com/chetanp2002/Student_Performance'
-    },
+    
     {
       title: 'customer-churn-prediction',
       // description: '', //pending
@@ -145,14 +155,7 @@ export default function ProjectsSection() {
       // link: '',
       github: 'https://github.com/chetanp2002/Road-Accident-Analysis-Dashboard'
     },
-    {
-      title: 'Suna',
-      description: 'Suna - Open Source Generalist AI Agent',
-      technologies: ['AI agent', 'Python', 'API'],
-      category: 'Open Source',
-      link: 'https://www.suna.so',
-      github: 'https://github.com/chetanp2002/suna'
-    }
+    
   ];
   
   // Filter projects based on selected category and view state
