@@ -84,10 +84,8 @@ export default function ProjectsSection() {
       link: 'https://www.suna.so',
       github: 'https://github.com/chetanp2002/suna',
       featured: true
-    }
-  ];
-  
-  const additionalProjects = [
+      
+    },
     {
       title: 'Research-Assistant-AI-Agent-using-Crew_AI',
       description: 'An AI-powered crew that researches the latest healthcare breakthroughs and transforms them into clear, impactful insights — powered by CrewAI and Groq’s Gemma models.',
@@ -97,7 +95,11 @@ export default function ProjectsSection() {
       // link: 'https://ai-codemate-using-deepseek-kxzgu55tughqghjbbg65ff.streamlit.app/',
       github: 'https://github.com/chetanp2002/Research-Assistant-AI-Agent-using-Crew_AI',
       // featured: true
-    },
+    }
+  ];
+  
+  const additionalProjects = [
+    
     {
       title: 'AI-CodeMate-using-DeepSeek',
       // description: '', //pending
