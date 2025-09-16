@@ -26,7 +26,8 @@ export default function ProjectsSection() {
       technologies: ['EDA', 'xgboost', 'geopy'],
       category: 'ML',
       link: 'https://food-delivery-prediction.onrender.com',
-      github: 'https://github.com/chetanp2002/Food-Delivery-Prediction'
+      github: 'https://github.com/chetanp2002/Food-Delivery-Prediction',
+      featured: true
     },
     {
       title: 'Airline-Passenger-Referral-Prediction',
@@ -34,7 +35,8 @@ export default function ProjectsSection() {
       technologies: ['Python', 'scikit-learn', 'gradio'],
       category: 'ML',
       link: 'https://airline-passenger-referral-prediction.onrender.com',
-      github: 'https://github.com/chetanp2002/Airline-Passenger-Referral-Prediction'
+      github: 'https://github.com/chetanp2002/Airline-Passenger-Referral-Prediction',
+      featured: true
     },
     {
       title: 'JobMate',
@@ -44,7 +46,7 @@ export default function ProjectsSection() {
       // thumbnail: '/images/projects/store-assistant.jpg',
       link: 'https://jobmate-clqngceyunn6aee5dfxays.streamlit.app/',
       github: 'https://github.com/chetanp2002/JobMate',
-      featured: true
+      // featured: true
     },
     {
       title: 'finacial-agent-with-phidata',
@@ -54,7 +56,7 @@ export default function ProjectsSection() {
       // thumbnail: '/images/projects/equity-research.jpg',
       // link: '',
       github: 'https://github.com/chetanp2002/finacial-agent-with-phidata',
-      featured: true
+      // featured: true
     },
     {
       title: 'Movie-Recommender-System',
@@ -80,12 +82,22 @@ export default function ProjectsSection() {
       technologies: ['AI agent', 'Python', 'API'],
       category: 'Open Source',
       link: 'https://www.suna.so',
-      github: 'https://github.com/chetanp2002/suna'
+      github: 'https://github.com/chetanp2002/suna',
+      featured: true
     }
   ];
   
   const additionalProjects = [
-    
+    {
+      title: 'Research-Assistant-AI-Agent-using-Crew_AI',
+      description: 'An AI-powered crew that researches the latest healthcare breakthroughs and transforms them into clear, impactful insights — powered by CrewAI and Groq’s Gemma models.',
+      technologies: ['CrewAI', 'Gemma', 'Agent'],
+      category: 'Agentic AI',
+      // thumbnail: '/images/projects/video-editor.jpg',
+      // link: 'https://ai-codemate-using-deepseek-kxzgu55tughqghjbbg65ff.streamlit.app/',
+      github: 'https://github.com/chetanp2002/Research-Assistant-AI-Agent-using-Crew_AI',
+      // featured: true
+    },
     {
       title: 'AI-CodeMate-using-DeepSeek',
       // description: '', //pending
