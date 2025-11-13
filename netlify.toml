@@ -2,5 +2,6 @@
   publish = "out"
   command = "npm run build"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+# Remove or comment out the next 3 lines
+# [[plugins]]
+#   package = "@netlify/plugin-nextjs"

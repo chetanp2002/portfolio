@@ -20,7 +20,7 @@ export default function ProjectsSection() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [showAll, setShowAll] = useState(false);
   
-  const featuredProjects = [
+  const featuredProjects: Project[] = [
     {
       title: 'RepoBot-AI',
       description: 'Repobot AI is a powerful AI-driven web application designed to revolutionize code exploration and understanding. By integrating Flask, Groq AI, and Chroma, it transforms GitHub repositories into interactive knowledge hubs, enabling users to ask questions and gain deep insights from complex codebases. With automated repository ingestion and indexing.',
@@ -101,7 +101,7 @@ export default function ProjectsSection() {
     }
   ];
   
-  const additionalProjects = [
+  const additionalProjects: Project[] = [
     {
       title: 'Research-Assistant-AI-Agent-using-Crew_AI',
       description: 'An AI-powered crew that researches the latest healthcare breakthroughs and transforms them into clear, impactful insights — powered by CrewAI and Groq’s Gemma models.',
@@ -114,7 +114,7 @@ export default function ProjectsSection() {
     },
     {
       title: 'AI-CodeMate-using-DeepSeek',
-      // description: '', //pending
+      description: '', //pending
       technologies: ['Ollama', 'DeepSeek', 'Streamlit'],
       category: 'GenAI',
       // thumbnail: '/images/projects/video-editor.jpg',
@@ -134,7 +134,7 @@ export default function ProjectsSection() {
     },
      {
       title: 'Forest-Fire-Prediction',
-      // description: '.',  //pending
+      description: '.',  //pending
       technologies: ['pandas', 'scikit-learn', 'flask'],
       category: 'ML',
       // thumbnail: '/images/projects/agent-tools.jpg',
@@ -145,7 +145,7 @@ export default function ProjectsSection() {
     
     {
       title: 'customer-churn-prediction',
-      // description: '', //pending
+      description: '', //pending
       technologies: ['Python', 'tensorflow', 'scikit-learn'],
       category: 'DL',
       link: 'https://customer-churn-prediction-ijrz2zwttocaqgakvc98vw.streamlit.app/',
@@ -161,7 +161,7 @@ export default function ProjectsSection() {
     },
     {
       title: 'Amazon-Prime-Data-Analysis',
-      // description: '',
+      description: '',
       technologies: ['PowerBI', 'Dashboard', 'Matplotlib'],
       category: 'Data Analysis',
       // link: '',
@@ -169,7 +169,7 @@ export default function ProjectsSection() {
     },
     {
       title: 'Cricket-World-Cup-data-analytics-Dashboard-',
-      // description: '',
+      description: '',
       technologies: ['PowerBI', 'Visualization', 'Dashboard'],
       category: 'Data Analysis',
       // link: '',
@@ -177,7 +177,7 @@ export default function ProjectsSection() {
     },
     {
       title: 'Covid-19-analysis-dashboard',
-      // description: ' ',
+      description: ' ',
       technologies: ['Tableau', 'PowerBI'],
       category: 'Data Analysis',
       // link: '',
@@ -185,7 +185,7 @@ export default function ProjectsSection() {
     },
     {
       title: 'Road-Accident-Analysis-Dashboard',
-      // description: '  ',
+      description: '  ',
       technologies: ['MS Excel', 'Dashboard', 'Pivot'],
       category: 'Data Analysis',
       // link: '',
@@ -321,7 +321,7 @@ export default function ProjectsSection() {
       />
       
       {/* Optional: Secondary Image Overlay (for multiple states) */}
-      {project.hoverThumbnail && (
+      {/* {project.hoverThumbnail && (
         <Image
           src={project.hoverThumbnail}
           alt={`${project.title} - Detailed view`}
@@ -329,7 +329,7 @@ export default function ProjectsSection() {
           className="object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-      )}
+      )} */}
     </div>
   )}
 </div>
