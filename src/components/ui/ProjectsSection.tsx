@@ -15,6 +15,8 @@ export default function ProjectsSection() {
       description: 'Repobot AI is a powerful AI-driven web application designed to revolutionize code exploration and understanding. By integrating Flask, Groq AI, and Chroma, it transforms GitHub repositories into interactive knowledge hubs, enabling users to ask questions and gain deep insights from complex codebases. With automated repository ingestion and indexing.',
       technologies: ['Langchain', 'Vectordb', 'Embeddings'],
       category: 'GenAI',
+      thumbnail: '/images/projects/repobot-ai.png',
+      // hoverThumbnail: '/images/projects/breakup-recovery.png',
       // thumbnail: '/images/projects/voice-journal.jpg',
       link: 'https://repobot-ai.onrender.com',
       github: 'https://github.com/chetanp2002/RepoBot-AI',
@@ -25,6 +27,7 @@ export default function ProjectsSection() {
       description: '"Optimizing Food Delivery with Machine Learning" This project uses machine learning to predict food delivery times by analyzing factors like distance, weather, and traffic. It helps improve delivery efficiency and customer satisfaction, making the food delivery process smarter and faster.',
       technologies: ['EDA', 'xgboost', 'geopy'],
       category: 'ML',
+      thumbnail: '/images/projects/food prediction 1.png',
       link: 'https://food-delivery-prediction.onrender.com',
       github: 'https://github.com/chetanp2002/Food-Delivery-Prediction',
       featured: true
@@ -106,7 +109,17 @@ export default function ProjectsSection() {
       // thumbnail: '/images/projects/video-editor.jpg',
       link: 'https://ai-codemate-using-deepseek-kxzgu55tughqghjbbg65ff.streamlit.app/',
       github: 'https://github.com/chetanp2002/AI-CodeMate-using-DeepSeek',
-      featured: true
+      // featured: true
+    },
+        {
+      title: 'Breakup-Recovery-Agent',
+      description: 'Breakup Recovery AI is an AI assistant that helps users heal after breakups with advice, closure messages, and a 7-day recovery plan.', 
+      technologies: ['Agno', 'Flask', 'Multi-Agent'],
+      category: 'Agentic AI',
+      // thumbnail: '/images/projects/video-editor.jpg',
+      // link: 'https://ai-codemate-using-deepseek-kxzgu55tughqghjbbg65ff.streamlit.app/',
+      github: 'https://github.com/chetanp2002/Breakup-recovery-agent',
+      // featured: true
     },
      {
       title: 'Forest-Fire-Prediction',
@@ -238,7 +251,7 @@ export default function ProjectsSection() {
               transition={{ duration: 0.5, delay: 0.1 * (index % 6) }} // Limit delay calculation
               className="glassmorphism overflow-hidden group h-full"
             >
-              <div className="h-48 bg-gradient-to-br from-dark-purple to-space-gray overflow-hidden">
+              {/* <div className="h-48 bg-gradient-to-br from-dark-purple to-space-gray overflow-hidden">
                 <div className="w-full h-full flex items-center justify-center">
                   <div className="text-center p-4">
                     <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
@@ -254,7 +267,62 @@ export default function ProjectsSection() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
+<div className="h-48 overflow-hidden relative group cursor-pointer rounded-xl border border-transparent hover:border-cyber-blue/30 shadow-lg hover:shadow-2xl hover:shadow-cyber-blue/10 transition-all duration-500 bg-space-gray">
+  {/* Default State - Enhanced Dark Background */}
+  <div className="absolute inset-0 z-10 flex items-center justify-center transition-all duration-500 group-hover:opacity-0 group-hover:scale-105">
+    {/* Subtle Cyber Pattern */}
+    <div className="absolute inset-0 bg-gradient-to-br from-dark-purple to-space-gray">
+      <div className="absolute inset-0 opacity-5 bg-cyber-grid bg-[length:20px_20px]"></div>
+    </div>
+    
+    {/* Content */}
+    <div className="text-center p-6 relative z-10">
+      <h3 className="text-2xl font-bold text-white mb-4 tracking-tight bg-gradient-to-r from-white to-cyber-blue bg-clip-text text-transparent">
+        {project.title}
+      </h3>
+      
+      {/* Animated Technology Tags */}
+      <div className="flex flex-wrap justify-center gap-2">
+        {project.technologies.slice(0, 3).map((tech, index) => (
+          <span 
+            key={tech} 
+            className="text-xs px-3 py-1 bg-black/60 rounded-full text-cyber-blue border border-cyber-blue/30 transition-all duration-300 hover:bg-cyber-blue/20 hover:scale-105 hover:-translate-y-0.5 backdrop-blur-sm"
+            style={{ transitionDelay: `${index * 100}ms` }}
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div>
+  </div>
+  
+  {/* Hover State - Full Image Background */}
+  {project.thumbnail && (
+    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 overflow-hidden">
+      {/* Primary Image */}
+      <Image
+        src={project.thumbnail}
+        alt={project.title}
+        fill
+        className="object-cover scale-105 group-hover:scale-100 transition-transform duration-700 ease-out"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
+      
+      {/* Optional: Secondary Image Overlay (for multiple states) */}
+      {project.hoverThumbnail && (
+        <Image
+          src={project.hoverThumbnail}
+          alt={`${project.title} - Detailed view`}
+          fill
+          className="object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      )}
+    </div>
+  )}
+</div>
+              
               
               <div className="p-6 flex flex-col justify-between flex-grow">
                 <p className="text-gray-300 text-sm mb-4 line-clamp-3">
