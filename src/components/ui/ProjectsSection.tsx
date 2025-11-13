@@ -5,6 +5,17 @@ import { motion } from 'framer-motion';
 import { FiGithub, FiExternalLink, FiChevronRight } from 'react-icons/fi';
 import Image from 'next/image';
 
+interface Project {
+  title: string;
+  description: string;
+  technologies: string[];
+  category: string;
+  thumbnail?: string;
+  link?: string;
+  github: string;
+  featured?: boolean;
+}
+
 export default function ProjectsSection() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [showAll, setShowAll] = useState(false);
