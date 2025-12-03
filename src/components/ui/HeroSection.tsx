@@ -160,14 +160,16 @@ export default function HeroSection() {
             </motion.a> */}
 
              <motion.a 
-                href="/resume.pdf"
-                download
-                className="cyber-button"
-                whileHover={isSafariBrowser ? undefined : { scale: 1.05 }}
-                whileTap={isSafariBrowser ? undefined : { scale: 0.95 }}
-              >
-                Get Resume
-              </motion.a>
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cyber-button"
+              whileHover={isSafariBrowser ? undefined : { scale: 1.05 }}
+              whileTap={isSafariBrowser ? undefined : { scale: 0.95 }}
+            >
+              Get Resume
+            </motion.a>
+
             
             <motion.a 
               href="#contact"

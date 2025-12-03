@@ -6,6 +6,29 @@ import { FiBriefcase, FiAward, FiCalendar, FiMapPin } from 'react-icons/fi';
 export default function ExperienceSection() {
   const experience = [
     {
+      title: 'AI Intern',
+      company: ' Cilow AI',
+      location: 'United States (Remote)',
+      duration: 'Sep 2025 - Nov 2025',
+      description: [
+         'Founding AI Engineer Intern at a venture-backed AI infrastructure startup focused on persistent memory and context engines for agents.',
+         'Contributed to product demonstration and technical narrative by developing materials to showcase core platform capabilities.' ,
+         'Gained experience within a production technology stack including Rust, Kubernetes, and custom vector/graph databases.'
+      ]
+    },
+    {
+      title: 'Open Source Contributor',
+      company: 'Kortix AI (Suna)',
+      // location: 'United States (Remote)',
+      // duration: 'Sep 2025 - Nov 2025',
+      description: [
+         "Contributing to the Suna agent framework's infrastructure, focusing on Python packaging and build system stability.",
+         'Refining build configurations and dependency resolution for reproducible developer environments.' ,
+         'Integrating features through GitHub Actions CI/CD, following version control and automated testing standards.'
+      ]
+    },
+    
+    {
       title: 'Data Analytics and Visualization Job Simulation',
       company: ' Accenture North America',
       location: 'Remote',
@@ -116,7 +139,7 @@ export default function ExperienceSection() {
                       </div>
                     </div>
                     
-                    <ul className="list-disc list-inside space-y-2 text-gray-300">
+                    <ul className="list-disc list-outside pl-5 space-y-2 text-gray-300">
                       {job.description.map((point, i) => (
                         <li key={i}>{point}</li>
                       ))}
