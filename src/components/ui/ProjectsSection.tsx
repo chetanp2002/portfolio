@@ -33,6 +33,18 @@ export default function ProjectsSection() {
       github: 'https://github.com/chetanp2002/RepoBot-AI',
       featured: true
     },
+        {
+      title: 'TripCrew',
+      description: 'An autonomous multi-agent system built with CrewAI and Groq that automates complex travel planning. It features real-time web search capabilities and a sequential task pipeline to generate detailed, budget-conscious 7-day itineraries.',
+      technologies: ['CrewAI', 'Multi-Agent', 'DuckDuckGo'],
+      category: 'Agentic AI',
+      thumbnail: '/images/projects/repobot-ai.png',
+      // hoverThumbnail: '/images/projects/breakup-recovery.png',
+      // thumbnail: '/images/projects/voice-journal.jpg',
+      link: 'https://ai-trip-planner-8psuehgddtwruvsv5sdrkp.streamlit.app/',
+      github: 'https://github.com/chetanp2002/TripCrew',
+      featured: true
+    },
     {
       title: 'Food-Delivery-Prediction',
       description: '"Optimizing Food Delivery with Machine Learning" This project uses machine learning to predict food delivery times by analyzing factors like distance, weather, and traffic. It helps improve delivery efficiency and customer satisfaction, making the food delivery process smarter and faster.',
