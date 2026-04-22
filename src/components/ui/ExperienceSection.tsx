@@ -6,25 +6,36 @@ import { FiBriefcase, FiAward, FiCalendar, FiMapPin } from 'react-icons/fi';
 export default function ExperienceSection() {
   const experience = [
     {
+      title: 'AI Engineer',
+      company: 'Metalinked',
+      location: 'United States (Remote)',
+      duration: 'jan 2026 - Present',
+      description: [
+         'Building an agentic AI orchestration layer over manufacturing ERP and MES systems, enabling LLM-driven workflows for quoting, sourcing, and procurement across enterprise customers. ',
+         'Designed multi-agent pipelines with LangGraph and tool-calling LLMs to automate BOM analysis and RFQ generation, reducing manual sourcing effort for operations teams.' ,
+         'Developed retrieval layers combining vector search with structured ERP queries so agents can reason over tribal knowledge, legacy drawings, and live inventory with grounded responses.',
+         'Shipped evaluation harnesses and guardrails (output validation, schema enforcement, retry policies) to improve agent reliability before promotion to production.'
+      ]
+    },
+    {
       title: 'AI Intern',
-      company: ' Cilow AI',
+      company: 'Stealth AI Startup',
       location: 'United States (Remote)',
       duration: 'Sep 2025 - Nov 2025',
       description: [
-         'Founding AI Engineer Intern at a venture-backed AI infrastructure startup focused on persistent memory and context engines for agents.',
-         'Contributed to product demonstration and technical narrative by developing materials to showcase core platform capabilities.' ,
-         'Gained experience within a production technology stack including Rust, Kubernetes, and custom vector/graph databases.'
+         'Interned at an early-stage AI infrastructure startup building persistent memory and context engines for autonomous agents.',
+         'Developed technical demo materials and product narrative content to communicate core platform capabilities to external audiences. ' ,
+         'Gained exposure to a production stack spanning Rust services, Kubernetes, and custom vector/graph databases used for agent memory. '
       ]
     },
     {
       title: 'Open Source Contributor',
       company: 'Kortix AI (Suna)',
       // location: 'United States (Remote)',
-      // duration: 'Sep 2025 - Nov 2025',
+      duration: '2025',
       description: [
-         "Contributing to the Suna agent framework's infrastructure, focusing on Python packaging and build system stability.",
-         'Refining build configurations and dependency resolution for reproducible developer environments.' ,
-         'Integrating features through GitHub Actions CI/CD, following version control and automated testing standards.'
+         "Merged a pull request into the Suna agent framework improving Python packaging and build system stability for more reproducible developer environments.",
+         "Navigated the project's contribution workflow end-to-end — issue triage, PR review cycles, and GitHub Actions CI/CD — following the maintainers' testing and version control standards."
       ]
     },
     

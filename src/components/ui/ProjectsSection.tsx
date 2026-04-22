@@ -33,7 +33,7 @@ export default function ProjectsSection() {
       github: 'https://github.com/chetanp2002/RepoBot-AI',
       featured: true
     },
-        {
+    {
       title: 'TripCrew',
       description: 'An autonomous multi-agent system built with CrewAI and Groq that automates complex travel planning. It features real-time web search capabilities and a sequential task pipeline to generate detailed, budget-conscious 7-day itineraries.',
       technologies: ['CrewAI', 'Multi-Agent', 'DuckDuckGo'],
