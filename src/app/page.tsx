@@ -74,8 +74,8 @@ export default function Home() {
       {/* Main Content */}
       <HeroSection />
       <AboutSection />
-      <ProjectsSection />
       <ExperienceSection />
+      <ProjectsSection />
       <ContactSection />
       <Footer />
     </main>
