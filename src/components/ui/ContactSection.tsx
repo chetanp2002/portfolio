@@ -28,7 +28,7 @@ export default function ContactSection() {
     setIsSubmitting(true);
 
     emailjs.send(
-      'service_aiczxpm',   // replace with your EmailJS Service ID
+      'service_g0doqk8',   // replace with your EmailJS Service ID
       'template_1wprhxa',  // replace with your EmailJS Template ID
       formData,            // { name, email, message }
       'ylBcbVyfHmcv-QsSf'    // replace with your EmailJS Public Key
